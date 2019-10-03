@@ -1,11 +1,6 @@
-Chapter-02/Exercises/a.out
-Chapter-07/Samples/a.out
-Chapter-07/Exercises/a.out
-Chapter-08/Samples/a.out
-Chapter-08/Exercises/a.out
-Chapter-09/Samples/a.out
-Chapter-09/Exercises/a.out
-Chapter-09/Projets/a.out
-Chapter-10/Samples/a.out
-Chapter-10/Exercises/a.out
-Chapter-10/Projects/a.out
+### C ###
+# Executables
+*.exe
+*.out
+
+
