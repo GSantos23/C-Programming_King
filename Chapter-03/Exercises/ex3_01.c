@@ -13,8 +13,7 @@ What output do the following calls of printf produce?
  3.02530e+01
 83.1620
 1e-06 
-*/*
-
+*/
 
 #include <stdio.h> 
 
