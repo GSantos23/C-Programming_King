@@ -3,7 +3,7 @@
 #define STACK_SIZE	100
 
 // External Variables
-int contents[STACK_SIZE]
+int contents[STACK_SIZE];
 int top = 0;
 
 void make_empty(void)
