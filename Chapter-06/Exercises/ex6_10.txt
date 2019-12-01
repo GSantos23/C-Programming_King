@@ -1,0 +1,10 @@
+/**
+ * Show how to replace a continue statement by an equivalent goto statement
+ */
+
+/*
+		some code;     |     label_name: statement;	
+		continue;	   |	....
+					   |	goto label_name;
+					   |
+ */
