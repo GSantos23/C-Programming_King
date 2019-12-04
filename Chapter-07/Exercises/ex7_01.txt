@@ -1,0 +1,5 @@
+1. Give the decimal value of each of the following integer constants:
+
+(a) 077     --> 63
+(b) 0x77    --> 119
+(c) 0XABC   --> 2748
