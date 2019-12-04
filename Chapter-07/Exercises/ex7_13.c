@@ -1,0 +1,23 @@
+// Assume that a program contains the following declarations:
+
+/*
+char c = '\1';
+short s = 2;
+int i = -3;
+long m = 5;
+float f = 6.5f;
+double d = 7.5;
+*/
+
+/*  Give the value and the type of each expression listed below.
+ *
+ *  (a) c * i       (c) f / c       (e) f - d
+ *  (b) s + m       (d) d / s       (f) (int) f
+ */
+
+// (a) int
+// (b) long
+// (c) float
+// (d) double
+// (e) double
+// (f) int
