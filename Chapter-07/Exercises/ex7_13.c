@@ -15,9 +15,11 @@ double d = 7.5;
  *  (b) s + m       (d) d / s       (f) (int) f
  */
 
-// (a) int
-// (b) long
-// (c) float
-// (d) double
-// (e) double
-// (f) int
+/*
+(a) int
+(b) long
+(c) float
+(d) double
+(e) double
+(f) int
+*/
