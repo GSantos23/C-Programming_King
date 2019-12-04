@@ -1,0 +1,10 @@
+6. For each of the following items of data, specify which one of the types
+char, short, int, or long is the smallest guaranteed to be a large enough to
+store the item
+
+(a) Days in a month		--> char
+(b) Days in a year		--> short
+(c) Minutes in a Days 	--> short
+(d) Seconds in a day 	--> int
+
+// I assuming 64-bit computer
