@@ -1,44 +1,38 @@
-/* Modify the interest.c program of Secton 8.1 so that it compounds interest 
-monthly instead of annualy. The form of output shouldn't change, the balance
-should still be shown at intervals */
-
-// Prints a table of compound interest
+/*
+ * The Fibonacci numbers are 0, 1, 1, 2, 3, 5, 8, 13 ..., where each number is
+ * the sum of the two preceding numbers. Write a program fragment that declares
+ * an array named fib_numbers of length 40 and fills the array with the first 40
+ * Fibonacci numbers. Hint: Fill in the first two numbers individually, then use
+ * a loop to compute the remaining numbers.
+*/
 
 #include <stdio.h>
 
-#define NUM_RATES ((int) (sizeof (value) / sizeof(value[0])))
-#define INITIAL_BALANCE 100.00
-
 int main(void)
 {
-    int i, low_rate, num_years, year,months;
-    double value[5];
+	int fib_numbers[40] = {0};
 
-    printf("Enter interest rate: ");
-    scanf("%d", &low_rate);
-    printf("Enter number of years: ");
-    scanf("%d", &num_years);
+	fib_numbers[0] = 0;
+	fib_numbers[1] = 1;
 
-    printf("\nYears");
-    for (i = 0; i < NUM_RATES; i++)
-    {
-        printf("%6d%%", low_rate + i);
-        value[i] = INITIAL_BALANCE;
-    }
-    printf("\n");
+	int a = fib_numbers[0];
+	int b = fib_numbers[1];
 
-    for(year = 1; year <= num_years; year++)
-    {
-        printf("%3d\t", year);
-        for (i = 0; i < NUM_RATES; i++)
-        {
-            for (months = 1; months <= 12; months++)
-                value[i] += ((low_rate + i) / 100.0 / 12) * value[i];
+	for (int i = 1; i < 40; i++)
+	{
+		fib_numbers[i] = a + b;
+		a = b;
+		b = fib_numbers[i];	
+	}
 
-            printf("%7.2f", value[i]);
-        }
-        printf("\n");
-    }
+	printf("Result:\n");
 
-    return 0;
+	for (int j = 0; j < 40; j++)
+	{
+		printf("%d ", fib_numbers[j]);
+	}
+
+	printf("\n");
+
+	return 0;
 }
