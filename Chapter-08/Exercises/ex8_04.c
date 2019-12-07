@@ -1,22 +1,19 @@
-/* Modify reverse.c program of Section 8.1 to use the expression (int) 
-(sizeof(a) / sizeof(a[0])) (or a macro with this value) for the array length.*/
-
+/*
+ * (C99) Repeat Exercise 3, but this time use a designated initializer. Make the
+ * initializer as short as possible.
+ *
+*/
 #include <stdio.h>
-
-#define N 10
+#include <stdbool.h>
 
 int main(void)
 {
-    int a[N], i;
+	bool weekend[] = {[0]=true, [6]=true};	// C99 designated initializer
 
-    printf("Enter %d numbers: ", N);
-    for (i = 0; i < (int) (sizeof(a) / sizeof(a[0])); i++)
-        scanf("%d", &a[i]);
+	for (int i = 0; i < 7; i++)
+	{
+		printf("Values[%d] --> %d\n", i, weekend[i]);
+	}
 
-    printf("In reverse order: ");
-    for (i = (int) (sizeof(a) / sizeof(a[0])) - 1; i >= 0; i--)
-        printf(" %d", a[i]);
-    printf("\n");
-
-    return 0;
+	return 0;
 }
