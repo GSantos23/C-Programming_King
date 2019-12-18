@@ -2,6 +2,7 @@
 
 #include <stdio.h>
 
+
 #define N 10
 
 void max_min (int a[], int n, int *max, int *min);
