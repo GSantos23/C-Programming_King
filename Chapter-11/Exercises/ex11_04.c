@@ -14,9 +14,9 @@
 void swap(int *p, int *q);
 
 int main(void)
-{
+{ 
 	int i, j;
-
+    	
 	printf("Enter two values (i,j) separated by a space: ");
 	scanf("%d %d", &i, &j);
 
