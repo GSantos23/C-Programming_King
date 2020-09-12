@@ -8,7 +8,7 @@ int main (void)
 {
 	int number;
 
-	printf("Enter a two-digit number: ");
+	printf("Enter a three-digit number: ");
 	scanf("%d", &number);
 
 	int firstNum = number / 100;	// Last number
