@@ -1,4 +1,4 @@
-/*
+	/*
 	Programming Project 1 in Chapter 4 asked you to write a program that 
 	displays a two-digit number with its number reversed. Generalaize the
 	program so that the number can have one, two, three or more digits.
@@ -10,8 +10,7 @@
 
 int main (void)
 {
-	int number, firstNum, lastNum;
-	int input;
+	int number = 0;
 
 	printf("Enter a number: ");
 	scanf("%d", &number);
@@ -24,6 +23,8 @@ int main (void)
 		number = number / 10;
 
 	} while (number != 0);
+
+	printf("\n");
 
 	return 0;
 }
