@@ -9,7 +9,7 @@
 int main(void)
 {
 	int n = 0;
-	float e = 1.0f; 	float factorial = 1.0;	float epsilon = 0.0f;
+	float e = 1.0f; 	float factorial = 1.0f;	float epsilon = 0.0f;
 
 	printf("Enter value on n: ");
 	scanf("%d", &n);
