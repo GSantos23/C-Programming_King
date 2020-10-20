@@ -14,7 +14,7 @@
 
 int main(void)
 {
-	int n, even = 0, i =1;
+	int n, even = 0;
 
 	printf("Enter value of n: ");
 	scanf("%d", &n);
