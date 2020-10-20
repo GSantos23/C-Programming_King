@@ -10,10 +10,9 @@
 
 int main (void)
 {
-	float loan = 0.0, interestRate = 0.0, monthlyPayment = 0.0;
-	float firstPayment = 0.0, secondPayment = 0.0, thirdPayment = 0.0;
+	float loan = 0.0f, interestRate = 0.0f, monthlyPayment = 0.0f;
 	int numberofPayments = 0;
-	float result = 0.0;
+	float result = 0.0f;
 	
 	printf("Enter amount of  loan: ");
 	scanf("%f", &loan);
