@@ -10,12 +10,12 @@ sizeof(long), sizeof(float), sizeof(double) and sizeof(double).
 int main(void)
 {
     printf("Table of sizeof values:***************************************\n");
-    printf("sizeof(int) \t%ld\n", sizeof(int));
-    printf("sizeof(int) \t%ld\n", sizeof(short));
-    printf("sizeof(int) \t%ld\n", sizeof(long));
-    printf("sizeof(int) \t%ld\n", sizeof(float));
-    printf("sizeof(int) \t%ld\n", sizeof(double));
-    printf("sizeof(int) \t%ld\n", sizeof(long double));
+    printf("sizeof(int) \t%10ld\n", sizeof(int));
+    printf("sizeof(short) \t%10ld\n", sizeof(short));
+    printf("sizeof(long) \t%10ld\n", sizeof(long));
+    printf("sizeof(float) \t%10ld\n", sizeof(float));
+    printf("sizeof(double) \t%10ld\n", sizeof(double));
+    printf("sizeof(long double) \t%2ld\n", sizeof(long double));
 
     return 0;
 }
