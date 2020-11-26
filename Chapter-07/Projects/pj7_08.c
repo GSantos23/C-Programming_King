@@ -21,13 +21,16 @@ errors.
 int main (void)
 {
     int midnightMinutes, departureHours, departureMinutes;
-    //int arrivalHours, arrivalMinutes;
     char period;
 
+    /**
+     * On page 141 we have a note regarding the issue from scanf and getchar().
+     * That's why I left a space on line 31 after %d because gethar(), now period
+     * can read 2:05pm or 2:05 PM without issue
+     */
     printf("Enter a 12-hour time: ");
-    //scanf("%d:%d %c", &departureHours, &departureMinutes, &period);
-    scanf("%d:%d", &departureHours, &departureMinutes);
-    
+    scanf("%d:%d ", &departureHours, &departureMinutes);
+ 
     period = getchar(); // Even if you put pm or PM only detect P. So it works
 
     if (period == 'p' || period == 'P')
@@ -35,7 +38,7 @@ int main (void)
     else
         midnightMinutes = departureHours * 60 + departureMinutes;
 
-    printf("test: %d", midnightMinutes);
+
     printf("\n");
 
     if (midnightMinutes > 0 && midnightMinutes < 510)  // 12:00 am, 8:30 am
